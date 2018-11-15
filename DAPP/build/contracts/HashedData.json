@@ -1,0 +1,2032 @@
+{
+  "contractName": "HashedData",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        },
+        {
+          "name": "_writer_Id",
+          "type": "uint256"
+        },
+        {
+          "name": "_writer_Type",
+          "type": "string"
+        },
+        {
+          "name": "_data",
+          "type": "string"
+        }
+      ],
+      "name": "InsertHashData",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "GetHashData",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610591806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063944e232914610051578063d3d6c76214610118575b600080fd5b34801561005d57600080fd5b50610116600480360381019080803560001916906020019092919080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610235565b005b34801561012457600080fd5b5061014760048036038101908080356000191690602001909291905050506102e1565b604051808481526020018060200180602001838103835285818151815260200191508051906020019080838360005b83811015610191578082015181840152602081019050610176565b50505050905090810190601f1680156101be5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156101f75780820151818401526020810190506101dc565b50505050905090810190601f1680156102245780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60806040519081016040528060011515815260200184815260200183815260200182815250600080866000191660001916815260200190815260200160002060008201518160000160006101000a81548160ff0219169083151502179055506020820151816001015560408201518160020190805190602001906102ba9291906104c0565b5060608201518160030190805190602001906102d79291906104c0565b5090505050505050565b600060608060011515600080866000191660001916815260200190815260200160002060000160009054906101000a900460ff16151514151561032357600080fd5b60008085600019166000191681526020019081526020016000206001015460008086600019166000191681526020019081526020016000206002016000808760001916600019168152602001908152602001600020600301818054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104105780601f106103e557610100808354040283529160200191610410565b820191906000526020600020905b8154815290600101906020018083116103f357829003601f168201915b50505050509150808054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104ac5780601f10610481576101008083540402835291602001916104ac565b820191906000526020600020905b81548152906001019060200180831161048f57829003601f168201915b505050505090509250925092509193909250565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061050157805160ff191683800117855561052f565b8280016001018555821561052f579182015b8281111561052e578251825591602001919060010190610513565b5b50905061053c9190610540565b5090565b61056291905b8082111561055e576000816000905550600101610546565b5090565b905600a165627a7a72305820cebe12530120594c63097c385db670717c0acd74c0b590e4465192d0737c63080029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063944e232914610051578063d3d6c76214610118575b600080fd5b34801561005d57600080fd5b50610116600480360381019080803560001916906020019092919080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610235565b005b34801561012457600080fd5b5061014760048036038101908080356000191690602001909291905050506102e1565b604051808481526020018060200180602001838103835285818151815260200191508051906020019080838360005b83811015610191578082015181840152602081019050610176565b50505050905090810190601f1680156101be5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156101f75780820151818401526020810190506101dc565b50505050905090810190601f1680156102245780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60806040519081016040528060011515815260200184815260200183815260200182815250600080866000191660001916815260200190815260200160002060008201518160000160006101000a81548160ff0219169083151502179055506020820151816001015560408201518160020190805190602001906102ba9291906104c0565b5060608201518160030190805190602001906102d79291906104c0565b5090505050505050565b600060608060011515600080866000191660001916815260200190815260200160002060000160009054906101000a900460ff16151514151561032357600080fd5b60008085600019166000191681526020019081526020016000206001015460008086600019166000191681526020019081526020016000206002016000808760001916600019168152602001908152602001600020600301818054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104105780601f106103e557610100808354040283529160200191610410565b820191906000526020600020905b8154815290600101906020018083116103f357829003601f168201915b50505050509150808054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104ac5780601f10610481576101008083540402835291602001916104ac565b820191906000526020600020905b81548152906001019060200180831161048f57829003601f168201915b505050505090509250925092509193909250565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061050157805160ff191683800117855561052f565b8280016001018555821561052f579182015b8281111561052e578251825591602001919060010190610513565b5b50905061053c9190610540565b5090565b61056291905b8082111561055e576000816000905550600101610546565b5090565b905600a165627a7a72305820cebe12530120594c63097c385db670717c0acd74c0b590e4465192d0737c63080029",
+  "sourceMap": "25:1030:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:1030:2;;;;;;;",
+  "deployedSourceMap": "25:1030:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;532:191;;8:9:-1;5:2;;;30:1;27;20:12;5:2;532:191:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;826:227;;8:9:-1;5:2;;;30:1;27;20:12;5:2;826:227:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;826:227:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;826:227:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;532:191;654:62;;;;;;;;;678:4;654:62;;;;;;684:10;654:62;;;;696:12;654:62;;;;710:5;654:62;;;640:4;:11;645:5;640:11;;;;;;;;;;;;;;;;;:76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;532:191;;;;:::o;826:227::-;887:4;893:6;901;948:4;926:26;;:4;:11;931:5;926:11;;;;;;;;;;;;;;;;;:18;;;;;;;;;;;;:26;;;918:35;;;;;;;;971:4;:11;976:5;971:11;;;;;;;;;;;;;;;;;:21;;;994:4;:11;999:5;994:11;;;;;;;;;;;;;;;;;:23;;1019:4;:11;1024:5;1019:11;;;;;;;;;;;;;;;;;:26;;963:83;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;826:227;;;;;:::o;25:1030::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.0;\n\ncontract HashedData {\n    //Data would be encrypted with the private key and then hashed.\n    //Using the mapped data we can get the public key and decrypt the data\n    struct MappedData {\n        bool Exists;\n        uint Writer_Id;\n        string Writer_Type;\n        string Arbitrary_Data; //JSON data\n    }\n    \n    //maps the blockchain data to the hash of the original data outside the blockchain\n    mapping(bytes32 => MappedData) Data;\n    \n    //Uses input hash to connect it to the input data\n    function InsertHashData(bytes32 _hash, uint _writer_Id, string _writer_Type, string _data) public {\n        Data[_hash] = MappedData(\n            true, _writer_Id, _writer_Type, _data);\n    }\n    \n    //Uses input hash to retrieve data related to that hash that is stored in the blockchain\n    function GetHashData(bytes32 _hash) public constant returns (uint, string, string){\n        require(Data[_hash].Exists == true);\n        return (Data[_hash].Writer_Id, Data[_hash].Writer_Type, Data[_hash].Arbitrary_Data);\n    }\n}",
+  "sourcePath": "/home/kamal/Desktop/Blockchain-powered-IOT-network/DAPP/contracts/HashedData.sol",
+  "ast": {
+    "absolutePath": "/home/kamal/Desktop/Blockchain-powered-IOT-network/DAPP/contracts/HashedData.sol",
+    "exportedSymbols": {
+      "HashedData": [
+        733
+      ]
+    },
+    "id": 734,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 661,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 733,
+        "linearizedBaseContracts": [
+          733
+        ],
+        "name": "HashedData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "HashedData.MappedData",
+            "id": 670,
+            "members": [
+              {
+                "constant": false,
+                "id": 663,
+                "name": "Exists",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "222:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 662,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "222:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 665,
+                "name": "Writer_Id",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "243:14:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 664,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "243:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 667,
+                "name": "Writer_Type",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "267:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 666,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "267:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 669,
+                "name": "Arbitrary_Data",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "295:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 668,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "295:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "MappedData",
+            "nodeType": "StructDefinition",
+            "scope": 733,
+            "src": "194:141:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 674,
+            "name": "Data",
+            "nodeType": "VariableDeclaration",
+            "scope": 733,
+            "src": "432:35:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+              "typeString": "mapping(bytes32 => struct HashedData.MappedData)"
+            },
+            "typeName": {
+              "id": 673,
+              "keyType": {
+                "id": 671,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "440:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "432:30:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                "typeString": "mapping(bytes32 => struct HashedData.MappedData)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 672,
+                "name": "MappedData",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 670,
+                "src": "451:10:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_MappedData_$670_storage_ptr",
+                  "typeString": "struct HashedData.MappedData"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 696,
+              "nodeType": "Block",
+              "src": "630:93:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 694,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 685,
+                        "name": "Data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 674,
+                        "src": "640:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                          "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                        }
+                      },
+                      "id": 687,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 686,
+                        "name": "_hash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 676,
+                        "src": "645:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "640:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                        "typeString": "struct HashedData.MappedData storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "74727565",
+                          "id": 689,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "678:4:2",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 690,
+                          "name": "_writer_Id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 678,
+                          "src": "684:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 691,
+                          "name": "_writer_Type",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 680,
+                          "src": "696:12:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 692,
+                          "name": "_data",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 682,
+                          "src": "710:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 688,
+                        "name": "MappedData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 670,
+                        "src": "654:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_MappedData_$670_storage_ptr_$",
+                          "typeString": "type(struct HashedData.MappedData storage pointer)"
+                        }
+                      },
+                      "id": 693,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "654:62:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_MappedData_$670_memory",
+                        "typeString": "struct HashedData.MappedData memory"
+                      }
+                    },
+                    "src": "640:76:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                      "typeString": "struct HashedData.MappedData storage ref"
+                    }
+                  },
+                  "id": 695,
+                  "nodeType": "ExpressionStatement",
+                  "src": "640:76:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 697,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "InsertHashData",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 683,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 676,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "556:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 675,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "556:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 678,
+                  "name": "_writer_Id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "571:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 677,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 680,
+                  "name": "_writer_Type",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "588:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 679,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "588:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 682,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "609:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 681,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "609:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "555:67:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 684,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "630:0:2"
+            },
+            "scope": 733,
+            "src": "532:191:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 731,
+              "nodeType": "Block",
+              "src": "908:145:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "id": 714,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 709,
+                              "name": "Data",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 674,
+                              "src": "926:4:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                                "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                              }
+                            },
+                            "id": 711,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 710,
+                              "name": "_hash",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 699,
+                              "src": "931:5:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "926:11:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                              "typeString": "struct HashedData.MappedData storage ref"
+                            }
+                          },
+                          "id": 712,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "Exists",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 663,
+                          "src": "926:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "74727565",
+                          "id": 713,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "948:4:2",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        "src": "926:26:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 708,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        3644,
+                        3645
+                      ],
+                      "referencedDeclaration": 3644,
+                      "src": "918:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 715,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "918:35:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 716,
+                  "nodeType": "ExpressionStatement",
+                  "src": "918:35:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 717,
+                            "name": "Data",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 674,
+                            "src": "971:4:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                              "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                            }
+                          },
+                          "id": 719,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 718,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 699,
+                            "src": "976:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "971:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                            "typeString": "struct HashedData.MappedData storage ref"
+                          }
+                        },
+                        "id": 720,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "Writer_Id",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 665,
+                        "src": "971:21:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 721,
+                            "name": "Data",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 674,
+                            "src": "994:4:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                              "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                            }
+                          },
+                          "id": 723,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 722,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 699,
+                            "src": "999:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "994:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                            "typeString": "struct HashedData.MappedData storage ref"
+                          }
+                        },
+                        "id": 724,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "Writer_Type",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 667,
+                        "src": "994:23:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 725,
+                            "name": "Data",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 674,
+                            "src": "1019:4:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                              "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                            }
+                          },
+                          "id": 727,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 726,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 699,
+                            "src": "1024:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1019:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                            "typeString": "struct HashedData.MappedData storage ref"
+                          }
+                        },
+                        "id": 728,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "Arbitrary_Data",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 669,
+                        "src": "1019:26:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      }
+                    ],
+                    "id": 729,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "970:76:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_string_storage_$_t_string_storage_$",
+                      "typeString": "tuple(uint256,string storage ref,string storage ref)"
+                    }
+                  },
+                  "functionReturnParameters": 707,
+                  "id": 730,
+                  "nodeType": "Return",
+                  "src": "963:83:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 732,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "GetHashData",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 700,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 699,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "847:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 698,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "847:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "846:15:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 707,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 702,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "887:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 701,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "887:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 704,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "893:6:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 703,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "893:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 706,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "901:6:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 705,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "901:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "886:22:2"
+            },
+            "scope": 733,
+            "src": "826:227:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 734,
+        "src": "25:1030:2"
+      }
+    ],
+    "src": "0:1055:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kamal/Desktop/Blockchain-powered-IOT-network/DAPP/contracts/HashedData.sol",
+    "exportedSymbols": {
+      "HashedData": [
+        733
+      ]
+    },
+    "id": 734,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 661,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 733,
+        "linearizedBaseContracts": [
+          733
+        ],
+        "name": "HashedData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "HashedData.MappedData",
+            "id": 670,
+            "members": [
+              {
+                "constant": false,
+                "id": 663,
+                "name": "Exists",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "222:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 662,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "222:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 665,
+                "name": "Writer_Id",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "243:14:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 664,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "243:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 667,
+                "name": "Writer_Type",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "267:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 666,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "267:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 669,
+                "name": "Arbitrary_Data",
+                "nodeType": "VariableDeclaration",
+                "scope": 670,
+                "src": "295:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 668,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "295:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "MappedData",
+            "nodeType": "StructDefinition",
+            "scope": 733,
+            "src": "194:141:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 674,
+            "name": "Data",
+            "nodeType": "VariableDeclaration",
+            "scope": 733,
+            "src": "432:35:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+              "typeString": "mapping(bytes32 => struct HashedData.MappedData)"
+            },
+            "typeName": {
+              "id": 673,
+              "keyType": {
+                "id": 671,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "440:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "432:30:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                "typeString": "mapping(bytes32 => struct HashedData.MappedData)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 672,
+                "name": "MappedData",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 670,
+                "src": "451:10:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_MappedData_$670_storage_ptr",
+                  "typeString": "struct HashedData.MappedData"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 696,
+              "nodeType": "Block",
+              "src": "630:93:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 694,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 685,
+                        "name": "Data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 674,
+                        "src": "640:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                          "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                        }
+                      },
+                      "id": 687,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 686,
+                        "name": "_hash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 676,
+                        "src": "645:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "640:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                        "typeString": "struct HashedData.MappedData storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "74727565",
+                          "id": 689,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "678:4:2",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 690,
+                          "name": "_writer_Id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 678,
+                          "src": "684:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 691,
+                          "name": "_writer_Type",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 680,
+                          "src": "696:12:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 692,
+                          "name": "_data",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 682,
+                          "src": "710:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 688,
+                        "name": "MappedData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 670,
+                        "src": "654:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_MappedData_$670_storage_ptr_$",
+                          "typeString": "type(struct HashedData.MappedData storage pointer)"
+                        }
+                      },
+                      "id": 693,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "654:62:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_MappedData_$670_memory",
+                        "typeString": "struct HashedData.MappedData memory"
+                      }
+                    },
+                    "src": "640:76:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                      "typeString": "struct HashedData.MappedData storage ref"
+                    }
+                  },
+                  "id": 695,
+                  "nodeType": "ExpressionStatement",
+                  "src": "640:76:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 697,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "InsertHashData",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 683,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 676,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "556:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 675,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "556:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 678,
+                  "name": "_writer_Id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "571:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 677,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 680,
+                  "name": "_writer_Type",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "588:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 679,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "588:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 682,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "609:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 681,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "609:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "555:67:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 684,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "630:0:2"
+            },
+            "scope": 733,
+            "src": "532:191:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 731,
+              "nodeType": "Block",
+              "src": "908:145:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "id": 714,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 709,
+                              "name": "Data",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 674,
+                              "src": "926:4:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                                "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                              }
+                            },
+                            "id": 711,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 710,
+                              "name": "_hash",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 699,
+                              "src": "931:5:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "926:11:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                              "typeString": "struct HashedData.MappedData storage ref"
+                            }
+                          },
+                          "id": 712,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "Exists",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 663,
+                          "src": "926:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "74727565",
+                          "id": 713,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "948:4:2",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        "src": "926:26:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 708,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        3644,
+                        3645
+                      ],
+                      "referencedDeclaration": 3644,
+                      "src": "918:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 715,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "918:35:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 716,
+                  "nodeType": "ExpressionStatement",
+                  "src": "918:35:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 717,
+                            "name": "Data",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 674,
+                            "src": "971:4:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                              "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                            }
+                          },
+                          "id": 719,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 718,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 699,
+                            "src": "976:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "971:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                            "typeString": "struct HashedData.MappedData storage ref"
+                          }
+                        },
+                        "id": 720,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "Writer_Id",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 665,
+                        "src": "971:21:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 721,
+                            "name": "Data",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 674,
+                            "src": "994:4:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                              "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                            }
+                          },
+                          "id": 723,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 722,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 699,
+                            "src": "999:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "994:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                            "typeString": "struct HashedData.MappedData storage ref"
+                          }
+                        },
+                        "id": 724,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "Writer_Type",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 667,
+                        "src": "994:23:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 725,
+                            "name": "Data",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 674,
+                            "src": "1019:4:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_MappedData_$670_storage_$",
+                              "typeString": "mapping(bytes32 => struct HashedData.MappedData storage ref)"
+                            }
+                          },
+                          "id": 727,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 726,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 699,
+                            "src": "1024:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1019:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_MappedData_$670_storage",
+                            "typeString": "struct HashedData.MappedData storage ref"
+                          }
+                        },
+                        "id": 728,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "Arbitrary_Data",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 669,
+                        "src": "1019:26:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      }
+                    ],
+                    "id": 729,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "970:76:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_string_storage_$_t_string_storage_$",
+                      "typeString": "tuple(uint256,string storage ref,string storage ref)"
+                    }
+                  },
+                  "functionReturnParameters": 707,
+                  "id": 730,
+                  "nodeType": "Return",
+                  "src": "963:83:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 732,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "GetHashData",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 700,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 699,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "847:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 698,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "847:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "846:15:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 707,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 702,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "887:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 701,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "887:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 704,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "893:6:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 703,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "893:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 706,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 732,
+                  "src": "901:6:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 705,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "901:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "886:22:2"
+            },
+            "scope": 733,
+            "src": "826:227:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 734,
+        "src": "25:1030:2"
+      }
+    ],
+    "src": "0:1055:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xc654dab788f8ec925755af3613e324ccf4e4c185",
+      "transactionHash": "0xd41635d5a0f6fcc48a30f586f3fb5b644504875fffbcac4ee4bdae7a1c99bebe"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-07-23T17:41:08.427Z"
+}
