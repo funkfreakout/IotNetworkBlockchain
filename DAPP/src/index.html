@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Smart House Panel</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" style="width:100%">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Smart House Panel</h1>
+          <hr/>
+          <br/>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <p id="accountAddress" class="text-center"></p>
+          <div id="gatewaycontent" style="float: top"><!--"float: left" display: none;-->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Gateway ID</th>
+                  <th scope="col">Public Key</th>
+                  <th scope="col">Data</th>
+                  <th scope="col">Owner</th>
+                </tr>
+              </thead>
+              <tbody id="gatewayResults">
+              </tbody>
+            </table>
+            <hr/>
+          </div>
+          <div id="nodecontent" style="float: bottom">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Node ID</th>
+                  <th scope="col">Public Key</th>
+                  <th scope="col">Data</th>
+                  <th scope="col">Device Name</th>
+                  <th scope="col">MAC</th>
+                  <th scope="col">Gateway Host</th>
+                </tr>
+              </thead>
+              <tbody id="nodeResults">
+              </tbody>
+            </table>
+            <hr/>
+          </div>
+          <div id="tier1content" style="float: bottom">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Account ID</th>
+                  <th scope="col">Public Key</th>
+                  <th scope="col">Device Name</th>
+                  <th scope="col">Owner</th>
+                </tr>
+              </thead>
+              <tbody id="tier1Results">
+              </tbody>
+            </table>
+            <hr/>
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="width:100%">
+      <div class="row">
+        <div class="col-lg-12">
+          <div style="float: top" id="GatewayForm">
+            <form onSubmit = "App.AddInternalGatewayDevice(); return false;">
+              <fieldset>
+                <legend>Add Internal Gateway Device</legend>
+                <div class="form-group" style="float: left; width:80%">
+                  Public Key:
+                  <input type="text" id="publickey" style="width:30%">
+                  Data:
+                  <input type="text" id="data" style="width:30%">
+                  Owner:
+                  <input type="text" id="owner" style="width:28%">
+                </div>
+                <button type="submit" class="btn btn-primary" style="float: right">Add Gateway Device</button>
+              </fieldset>
+            </form>
+          </div>
+          <hr/>
+          <div style="float: bottom" id="AccountForm">
+            <form onSubmit = "App.AddTier1Account(); return false;">
+              <fieldset>
+                <legend>Add A Tier 1 Authorized Account</legend>
+                <div class="form-group" style="float: left; width:80%">
+                  Public Key:
+                  <input type="text" id="publickeyA" style="width:30%">
+                  Device Name:
+                  <input type="text" id="deviceNA" style="width:27%">
+                  Owner:
+                  <input type="text" id="ownerA" style="width:28%">
+                </div>
+              <button type="submit" class="btn btn-primary" style="float: right">Add Tier One Account</button>
+            </fieldset>
+            </form>
+          </div>
+          <hr/>
+          <div style="float: bottom" id="NodeForm">
+            <form onSubmit = "App.AddNodeToGateway(); return false;">
+              <fieldset>
+                <legend>Add A Node To A Gateway</legend>
+                <div class="form-group" style="float: left; width:80%">
+                  Public Key:
+                  <input type="text" id="publickeyN" style="width:30%">
+                  Data:
+                  <input type="text" id="dataN" style="width:30%">
+                  MAC:
+                  <input type="text" id="macN" style="width:28%">
+                  <br/>
+                  <br/>
+                  Device Name:
+                  <input type="text" id="deviceNN" style="width:28%">
+                  Gateway ID:
+                  <input type="number" id="GIDn" style="width:28%">
+                </div>
+              <button type="submit" class="btn btn-primary" style="float: right">Add Node</button>
+            </fieldset>
+            </form>
+          </div>
+          <hr/>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+var InternalGatewayDevice = artifacts.require("./InternalGatewayDevice.sol");
+
+module.exports = function(deployer) {
+  deployer.deploy(InternalGatewayDevice);
+};
